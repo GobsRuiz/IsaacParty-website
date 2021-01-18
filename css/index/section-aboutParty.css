@@ -1,0 +1,88 @@
+#aboutParty{
+    background: -webkit-linear-gradient(to right, #ff512f, #f09819); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff512f, #f09819);
+
+    padding: 12vh calc(1vh + 1vw);
+}
+
+
+
+
+
+/* Title */
+#aboutParty_title{
+    max-width: 70%;
+    
+    color: #fff;
+
+    margin-bottom: calc(5vh + 2vw);
+}
+#aboutParty_title h1{
+    font-size: calc(2vh + 2vw);
+}
+#aboutParty_title p{
+    font-size: calc(1vh + 1vw);
+}
+
+
+
+
+
+/* Item */
+.aboutParty_item{
+    width: 100%;
+
+    display: flex;
+
+    margin-bottom: calc(5vh + 2vw);
+}.aboutParty_item:last-child{
+    margin-bottom: 0;
+}
+/* Align items */
+.aboutParty_item:nth-child(odd){
+    justify-content: flex-end;
+}
+
+/* Card */
+.aboutParty_item_card{
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(40, 40, 40);
+    border-radius: calc(1vh + 1vw);
+
+    padding: 5vh 2vw;
+}
+
+/* Text */
+.aboutParty_item_text{
+    max-width: 50%;
+}
+/* H3 */
+.aboutParty_item_text h3{
+    color: #fff;
+    font-size: calc(2.5vh + 2.5vw);
+
+    margin-bottom: 4vh;
+}
+.aboutParty_item_text i{
+    height: calc(3vh + 2vw);
+
+    display: inline-block;
+}
+.aboutParty_item_text h3 i img{
+    height: 100%;
+}
+
+/* P */
+.aboutParty_item_text p{
+    color: #fff;
+    font-size: calc(1vh + 1vw);
+}
+
+/* Image */
+.aboutParty_item_image{
+    width: 30%;
+}

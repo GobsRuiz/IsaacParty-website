@@ -13,14 +13,19 @@
     <link rel="stylesheet" href="../css/reset.css">
     <!-- Variables -->
     <link rel="stylesheet" href="../css/variables.css">
+    <!-- Class -->
+    <link rel="stylesheet" href="../css/class.css">
 
     <!-- Header -->
     <link rel="stylesheet" href="../css/index/header.css">
 
     <!-- Main -->
+        <!-- About party -->
+        <link rel="stylesheet" href="../css/index/section-aboutParty.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header id="header">
         <!-- Container -->
         <section id="header_container">
@@ -67,7 +72,8 @@
 
                 <!-- Confirmation form -->
                 <section id="header_content_confirm">
-                    <span id="header_content_confirm_border"></span>
+                    <!-- Border -->
+                    <span class="borderTop"></span>
 
                     <h3 id="header_content_confirm_title">
                         Confirme sua presença
@@ -86,22 +92,139 @@
 
                 <!-- Countdown -->
                 <section id="header_content_countdown">
-                    <h6>
-                        7d
-                    </h6>
-                    <h6>
-                        23h
-                    </h6>
-                    <h6>
-                        5m
-                    </h6>
-                    <h6>
-                        43s
-                    </h6>
+                    <!-- Border -->
+                    <span class="borderTop">
+                        Contagem regressiva
+                    </span>
+
+                    <div id="header_content_countdown_timer">
+                        <!-- Days -->
+                        <div>
+                            <p id="header_content_countdown_days"></p>
+                            <p>
+                                D
+                            </p>
+                        </div>
+    
+                        <!-- Hours -->
+                        <div>
+                            <p id="header_content_countdown_hours"></p>
+                            <p>
+                                H
+                            </p>
+                        </div>
+    
+                        <!-- Minutes -->
+                        <div>
+                            <p id="header_content_countdown_minutes"><p>
+                            <p>
+                                M
+                            </p>
+                        </div>
+    
+                        <!-- Seconds -->
+                        <div>
+                            <p id="header_content_countdown_seconds"></p>
+                            <p>
+                                S
+                            </p>
+                        </div>
+                    </div>
                 </section>
             </section>
         </section>
     </header>
     
+    <!-- Main -->
+    <main>
+        <!-- About party -->
+        <section id="aboutParty">
+            <div id="aboutParty_title">
+                <h1>
+                    Para o que vai ser usado o meu dinheiro?
+                </h1>
+    
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sapiente mollitia, ex aliquid non nesciunt dolorem tempore error impedit asperiores odit sit distinctio officiis cum ab culpa qui suscipit quos?
+                </p>
+            </div>
+
+            <div id="aboutParty_items">
+                <!-- Item -->
+                <div class="aboutParty_item">
+                    <div class="aboutParty_item_card">
+                        <div class="aboutParty_item_text">
+                            <h3>
+                                Barman
+
+                                <i>
+                                  <img src="../images/main/aboutParty/barman-icon.svg" alt="">  
+                                </i>
+                            </h3>
+        
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora neque veniam iste dolorem fugiat reiciendis voluptatem molestiae et saepe eos, tenetur corporis illo. Et culpa voluptatum magnam corporis debitis.
+                            </p>
+                        </div>
+        
+                        <img src="../images/main/aboutParty/barman.jfif" alt="" class="aboutParty_item_image">
+                    </div>
+                </div>
+    
+                <!-- Item -->
+                <div class="aboutParty_item">
+                    <div class="aboutParty_item_card">
+                        <img src="../images/main/aboutParty/cup.png" alt="" class="aboutParty_item_image">
+        
+                        <div class="aboutParty_item_text">
+                            <h3>
+                                Copo
+
+                                <i>
+                                    <img src="../images/main/aboutParty/cup-icon.svg" alt="">
+                                </i>
+                            </h3>
+        
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora neque veniam iste dolorem fugiat reiciendis voluptatem molestiae et saepe eos, tenetur corporis illo. Et culpa voluptatum magnam corporis debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Item -->
+                <div class="aboutParty_item">
+                    <div class="aboutParty_item_card">
+                        <div class="aboutParty_item_text">
+                            <h3>
+                                Comida
+
+                                <i>
+                                    <img src="../images/main/aboutParty/food-icon.svg" alt="">
+                                </i>
+                            </h3>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora neque veniam iste dolorem fugiat reiciendis voluptatem molestiae et saepe eos, tenetur corporis illo. Et culpa voluptatum magnam corporis debitis.
+                            </p>
+                        </div>
+        
+                        <img src="../images/main/aboutParty/food.png" alt="" class="aboutParty_item_image">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+    <!-- Scripts -->
+    <!-- Header -->
+        <!-- Countdown -->
+        <script src="../js/main/countdown.js"></script>
+    <!-- Main -->
 </body>
 </html>

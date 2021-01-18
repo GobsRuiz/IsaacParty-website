@@ -1,7 +1,7 @@
 /* Header */
 #header{
     width: 100%;
-    height: 80vh;
+    height: 85vh;
 }
 
 
@@ -26,7 +26,7 @@
 
     display: block;
 
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .5);
 
     position: absolute;
     top: 0;
@@ -83,6 +83,7 @@
     max-width: 30vw;
 }
 #header_content_text h1{
+    font-family: tikitropic;
     color: #fff;
     font-size: calc(4vh + 4vw);
 }
@@ -113,22 +114,6 @@
     padding: calc(4vh + 1vw) calc(2vh + 3vw);
 }
 
-/* Border */
-#header_content_confirm_border{
-    content: "";
-
-    width: 100%;
-    height: 1vh;
-
-    display: block;
-
-    background: -webkit-linear-gradient(to right, #ff512f, #f09819); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff512f, #f09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 /* H1 */
 #header_content_confirm_title{
@@ -161,8 +146,8 @@
     font-weight: bold;
     text-transform: uppercase;
     border-radius: calc(1vh + 1vw);
-    background: -webkit-linear-gradient(to right, #ff512f, #f09819); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff512f, #f09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #ff512f, #f09819);
+    background: linear-gradient(to right, #ff512f, #f09819); 
     
     margin-top: 1vh;
     padding: 2vh 6vh;
@@ -172,24 +157,46 @@
 
 /* Countdown */
 #header_content_countdown{
-    width: 25vw;
+    background-color: rgb(40, 40, 40);
+    border-radius: 2vh;
 
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+
+    padding: 4vh 2vh;
+}
+
+/* Border top */
+#header_content_countdown .borderTop{
+    height: auto;
+
+    text-align: center;
+
+    color: #fff;
+    text-transform: uppercase;
+
+    padding: 1vh 0;
+}
+
+/* Timer */
+#header_content_countdown_timer{
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    background-color: rgb(32, 32, 32);
-    border-top: .5vh solid #ff512f;
-    border-radius: 2vh;
-
-    position: absolute;
-    bottom: -15%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    padding: 4vh 8vh;
+    margin-top: 4vh;
 }
-#header_content_countdown h6{
+
+#header_content_countdown_timer > div{
+    display: flex;
+    text-align: center;
+
+    margin: 0 1.5vw;
+}
+#header_content_countdown_timer p{
     color: #fff;
     font-size: 6vh;
 }
