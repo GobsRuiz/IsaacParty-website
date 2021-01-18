@@ -1,7 +1,7 @@
 /* Header */
 #header{
     width: 100%;
-    height: 85vh;
+    height: 95vh;
 }
 
 
@@ -87,8 +87,6 @@
 /* Text */
 #header_content_text{
     max-width: 30vw;
-
-    border: 1px solid red;
 }
 #header_content_text h1{
     font-family: tikitropicOutline;
@@ -96,16 +94,16 @@
     font-size: calc(4vh + 4vw);
 }
 #header_content_text h2{
-    color: #ff512f;
+    color: var(--orange);
     font-size: calc(4vh + 4vw);
 
     text-align: right;
 
-    margin-bottom: 4vh;
+    margin-bottom: calc(2vh + 1vw);
 }
 #header_content_text p{
     color: #fff;
-    font-size: calc(1vh + 1vw);
+    font-size: calc(1.2vh + 1.2vw);
 }
 
 
@@ -121,7 +119,8 @@
     padding: calc(4vh + 1vw) calc(2vh + 3vw);
 }
 /* Responsive confirmation */
-#header_content_openModalConfirm{
+#header_content_openModalConfirm,
+#header_content_modalConfirm{
     display: none;
 }
 
@@ -130,17 +129,17 @@
 #header_content_confirm_title{
     text-align: center;
 
-    margin-bottom: 6vh;
+    margin-bottom: calc(3vh + 2vw);
 }
 
 /* Form */
-#header_content_confirm_form{
+.confirmForm{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 /* Input */
-#header_content_confirm_form input{
+.confirmForm input{
     width: 100%;
     display: block;
 
@@ -152,7 +151,7 @@
     padding: 2vh;
 }
 /* Button */
-#header_content_confirm_form button{
+.confirmForm button{
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
@@ -173,7 +172,7 @@
 
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(300%);
+    transform: translateX(-50%) translateY(69vh);
     overflow: hidden;
 
     padding: 4vh 2vh;
@@ -197,7 +196,7 @@
     align-items: center;
     justify-content: space-around;
 
-    margin-top: 4vh;
+    margin-top: calc(2vh + 1vw);
 }
 
 #header_content_countdown_timer > div{
@@ -208,7 +207,7 @@
 }
 #header_content_countdown_timer p{
     color: #fff;
-    font-size: 6vh;
+    font-size: calc(1.5vh + 1.2vw);
 }
 
 
@@ -321,10 +320,12 @@
     }
 
     /* Responsive confirmation */
+    /* Button */
     #header_content_openModalConfirm{
         display: block;
 
         color: #fff;
+        font-size: calc(1.5vh + 1vw);
         font-weight: 900;
         text-transform: uppercase;
         background: -webkit-linear-gradient(to right, #ff512f, #f09819);
@@ -333,5 +334,44 @@
 
         margin-top: calc(1vh + 1vw);
         padding: calc(1vh + 1vw) calc(3vh + 3vw);
+    }
+    /* Modal */
+    #header_content_modalConfirm{
+        width: 100%;
+        height: 100%;
+
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(0, 0, 0, 0.5);
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+    /* Container */
+    #header_content_modalConfirm_container{
+        background-color: #fff;
+
+        padding: calc(2vh + 2vw) calc(3vh + 3vw);
+        position: relative;
+    }
+    /* Close button */
+    #header_content_modalConfirm_btnClose{
+        color: #fff;
+        font-size: calc(3vh + 3vw);
+        cursor: pointer;
+
+        position: absolute;
+        transform: translateX(920%) translateY(-160%);
+    }
+    /* H1 */
+    #header_content_modalConfirm_container h1{
+        color: var(--gray-40);
+        font-size: calc(2vh + 2vw);
+
+        margin-bottom: calc(3vh + 3vw);
     }
 }

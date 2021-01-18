@@ -52,10 +52,10 @@
                         Início
                     </a>
                     <a href="#">
-                        Início
+                        Sobre
                     </a>
                     <a href="#">
-                        Início
+                        Local
                     </a>
                     <a href="#">
                         Início
@@ -94,7 +94,7 @@
                         Confirme sua presença
                     </h3>
 
-                    <form action="" id="header_content_confirm_form">
+                    <form action="" id="header_content_confirm_form" class="confirmForm">
                         <input type="text" name="name" placeholder="Nome:">
                         <input type="text" name="name" placeholder="Nome: ">
                         <input type="text" name="name" placeholder="Nome:">
@@ -106,6 +106,7 @@
                 </section>
 
                 <!-- Responsive confirmation form -->
+                <!-- Button -->
                 <button id="header_content_openModalConfirm">
                     Confirme sua presença
                 </button>
@@ -151,6 +152,32 @@
                         </div>
                     </div>
                 </section>
+            </section>
+
+
+
+            <!-- Responsive confirmation form -->
+            <!-- Modal -->
+            <section id="header_content_modalConfirm">
+                <div id="header_content_modalConfirm_container">
+                    <i id="header_content_modalConfirm_btnClose" class="material-icons">
+                        close
+                    </i>
+
+                    <h1>
+                        Confirme sua presença
+                    </h1>
+
+                    <form action="" id="header_content_confirm_form" class="confirmForm">
+                        <input type="text" name="name" placeholder="Nome:">
+                        <input type="text" name="name" placeholder="Nome: ">
+                        <input type="text" name="name" placeholder="Nome:">
+
+                        <button>
+                            Confirmar
+                        </button>
+                    </form>
+                </div>
             </section>
         </section>
     </header>
@@ -281,10 +308,13 @@
 
     <!-- Scripts -->
     <!-- Header -->
+        <!-- Countdown -->
+        <script src="../js/header/countdown.js"></script>
         <!-- Responsive header -->
         <script src="../js/header/responsiveHeader.js"></script>
-        <!-- Countdown -->
-        <script src="../js/main/countdown.js"></script>
+        <!-- Modal confirm -->
+        <script src="../js/header/modalConfirm.js"></script>
+
     <!-- Main -->
 </body>
 </html>
