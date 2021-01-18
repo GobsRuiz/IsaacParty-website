@@ -1,6 +1,6 @@
 #aboutParty{
-    background: -webkit-linear-gradient(to right, #ff512f, #f09819); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ff512f, #f09819);
+    background: -webkit-linear-gradient(to right, #ff512f, #f09819);
 
     padding: 12vh calc(1vh + 1vw);
 }
@@ -45,12 +45,12 @@
 
 /* Card */
 .aboutParty_item_card{
-    width: 70%;
+    width: 70vw;
 
     display: flex;
     justify-content: space-between;
 
-    background-color: rgba(40, 40, 40);
+    background-color: var(--gray-40);
     border-radius: calc(1vh + 1vw);
 
     padding: 5vh 2vw;
@@ -58,7 +58,9 @@
 
 /* Text */
 .aboutParty_item_text{
-    max-width: 50%;
+    box-sizing: border-box;
+    
+    padding: 0 calc(1vh + 1vw);
 }
 /* H3 */
 .aboutParty_item_text h3{
@@ -84,5 +86,6 @@
 
 /* Image */
 .aboutParty_item_image{
-    width: 30%;
+    max-width: 30vw;
+    max-height: calc(20vh + 10vw);
 }

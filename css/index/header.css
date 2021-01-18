@@ -83,7 +83,7 @@
     max-width: 30vw;
 }
 #header_content_text h1{
-    font-family: tikitropic;
+    font-family: tikitropicOutline;
     color: #fff;
     font-size: calc(4vh + 4vw);
 }
@@ -161,9 +161,8 @@
     border-radius: 2vh;
 
     position: absolute;
-    bottom: -20%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(300%);
     overflow: hidden;
 
     padding: 4vh 2vh;

@@ -7,10 +7,6 @@
     src: url('../fonte/hawaianPunk.ttf') format('opentype');
 }
 @font-face {
-    font-family: kahunaIsland;
-    src: url('../fonte/KahunaIsland-nJw1.ttf') format('opentype');
-}
-@font-face {
     font-family: snubnose;
     src: url('../fonte/snubnose.otf') format('opentype');
 }
@@ -30,7 +26,7 @@
 }
 
 a, p, span, h1, h2, h3, h4, h5, h6{
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 a{

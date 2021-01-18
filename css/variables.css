@@ -1,7 +1,17 @@
 :root{
     /* Colors */
+    --sunrise-gradient: linear-gradient(to right, #ff512f, #f09819);
+    --sunrise-gradient-webkit: -webkit-linear-gradient(to right, #ff512f, #f09819);
+
+    /* Orange */
+    --orange: #FF512F;
+
+    /* Gray */
+    --gray-40: rgba(40, 40, 40);
 
 
 
     /* HTML */
+    /* Title - font */
+    --title_fontSize: calc(2vh + 2vw);
 }
