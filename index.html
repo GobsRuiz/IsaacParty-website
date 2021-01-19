@@ -14,22 +14,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
     <!-- Reset -->
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
 
     <!-- Variables -->
-    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="css/variables.css">
 
     <!-- Class -->
-    <link rel="stylesheet" href="../css/class.css">
+    <link rel="stylesheet" href="css/class.css">
 
     <!-- Header -->
-    <link rel="stylesheet" href="../css/index/header.css">
+    <link rel="stylesheet" href="css/index/header.css">
 
     <!-- Main -->
         <!-- About party -->
-        <link rel="stylesheet" href="../css/index/section-aboutParty.css">
+        <link rel="stylesheet" href="css/index/section-aboutParty.css">
         <!-- Party location -->
-        <link rel="stylesheet" href="../css/index/section-partyLocation.css">
+        <link rel="stylesheet" href="css/index/section-partyLocation.css">
 </head>
 <body>
 
@@ -48,18 +48,27 @@
                 
                 <!-- Menu -->
                 <nav id="header_top_menu">
-                    <a href="#">
+                    <a href="header">
                         Início
                     </a>
-                    <a href="#">
-                        Início
+                    <a href="aboutParty">
+                        Sobre
+                    </a>
+                    <a href="partyLocation">
+                        Local
                     </a>
                     <a href="#">
-                        Início
+                        Lista de confirmados
                     </a>
                     <a href="#">
-                        Início
+                        Festas anteriores
                     </a>
+
+                    <!-- Icon -->
+                    <!-- Close responsive menu -->
+                    <i id="header_top_menu_closeResponsiveMenu" class="material-icons">
+                        close
+                    </i>
                 </nav>
 
                 <!-- Hamburguer icon -->
@@ -94,7 +103,7 @@
                         Confirme sua presença
                     </h3>
 
-                    <form action="" id="header_content_confirm_form">
+                    <form action="" id="header_content_confirm_form" class="confirmForm">
                         <input type="text" name="name" placeholder="Nome:">
                         <input type="text" name="name" placeholder="Nome: ">
                         <input type="text" name="name" placeholder="Nome:">
@@ -106,6 +115,7 @@
                 </section>
 
                 <!-- Responsive confirmation form -->
+                <!-- Button -->
                 <button id="header_content_openModalConfirm">
                     Confirme sua presença
                 </button>
@@ -152,6 +162,32 @@
                     </div>
                 </section>
             </section>
+
+
+
+            <!-- Responsive confirmation form -->
+            <!-- Modal -->
+            <section id="header_content_modalConfirm">
+                <div id="header_content_modalConfirm_container">
+                    <i id="header_content_modalConfirm_btnClose" class="material-icons">
+                        close
+                    </i>
+
+                    <h1>
+                        Confirme sua presença
+                    </h1>
+
+                    <form action="" id="header_content_confirm_form" class="confirmForm">
+                        <input type="text" name="name" placeholder="Nome:">
+                        <input type="text" name="name" placeholder="Nome: ">
+                        <input type="text" name="name" placeholder="Nome:">
+
+                        <button>
+                            Confirmar
+                        </button>
+                    </form>
+                </div>
+            </section>
         </section>
     </header>
     
@@ -178,7 +214,7 @@
                                 Barman
 
                                 <i>
-                                  <img src="../images/main/aboutParty/barman-icon.svg" alt="">  
+                                  <img src="images/main/aboutParty/barman-icon.svg" alt="">  
                                 </i>
                             </h3>
         
@@ -187,21 +223,21 @@
                             </p>
                         </div>
         
-                        <img src="../images/main/aboutParty/barman2.jpg" alt="" class="aboutParty_item_image">
+                        <img src="images/main/aboutParty/barman2.jpg" alt="" class="aboutParty_item_image">
                     </div>
                 </div>
     
                 <!-- Item -->
                 <div class="aboutParty_item">
                     <div class="aboutParty_item_card">
-                        <img src="../images/main/aboutParty/cup.jpg" alt="" class="aboutParty_item_image">
+                        <img src="images/main/aboutParty/cup.jpg" alt="" class="aboutParty_item_image">
         
                         <div class="aboutParty_item_text">
                             <h3>
                                 Copo
 
                                 <i>
-                                    <img src="../images/main/aboutParty/cup-icon.svg" alt="">
+                                    <img src="images/main/aboutParty/cup-icon.svg" alt="">
                                 </i>
                             </h3>
         
@@ -220,7 +256,7 @@
                                 Comida
 
                                 <i>
-                                    <img src="../images/main/aboutParty/food-icon.svg" alt="">
+                                    <img src="images/main/aboutParty/food-icon.svg" alt="">
                                 </i>
                             </h3>
                             
@@ -229,7 +265,7 @@
                             </p>
                         </div>
         
-                        <img src="../images/main/aboutParty/food.jpg" alt="" class="aboutParty_item_image">
+                        <img src="images/main/aboutParty/food.jpg" alt="" class="aboutParty_item_image">
                     </div>
                 </div>
             </div>
@@ -281,10 +317,17 @@
 
     <!-- Scripts -->
     <!-- Header -->
-        <!-- Responsive header -->
-        <script src="../js/header/responsiveHeader.js"></script>
+        <!-- Header animation scroll -->
+        <script src="js/header/headerAnimationScroll.js"></script>
         <!-- Countdown -->
-        <script src="../js/main/countdown.js"></script>
+        <script src="js/header/countdown.js"></script>
+        <!-- Scroll to section -->
+        <script src="js/header/scrollToSection.js"></script>
+        <!-- Responsive header -->
+        <script src="js/header/responsiveHeader.js"></script>
+        <!-- Modal confirm -->
+        <script src="js/header/modalConfirm.js"></script>
+
     <!-- Main -->
 </body>
 </html>
