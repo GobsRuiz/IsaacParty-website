@@ -17,6 +17,12 @@
 
 
 
+/* Section */
+.section{
+    padding: var(--padding-section);
+}
+
+
 /* Section title */
 .sectionTitle{
     display: inline-block;
