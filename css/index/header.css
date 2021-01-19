@@ -58,9 +58,10 @@
 
 /* Logo */
 #header_top_logo h1{
+    font-family: snubnose;
     color: #fff;
 
-    transition: color .3s;
+    transition: color .25s;
 }.headerAnimationScroll#header_top_logo h1{
     color: var(--gray-40);
 }
@@ -69,12 +70,18 @@
 /* Menu */
 #header_top_menu a{
     color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
 
     padding: 1vh 2vh;
-    transition: color .3s;
+    transition: color .25s;
 }.headerAnimationScroll#header_top_menu a{
     color: var(--gray-40);
+}#header_top_menu a:hover,
+.headerAnimationScroll#header_top_menu a:hover{
+    color: var(--orange);
 }
+
 
 
 /* Hamburguer icon */
@@ -103,11 +110,12 @@
     max-width: 30vw;
 }
 #header_content_text h1{
-    font-family: tikitropicOutline;
+    font-family: snubnose;
     color: #fff;
     font-size: calc(4vh + 4vw);
 }
 #header_content_text h2{
+    font-family: snubnose;
     color: var(--orange);
     font-size: calc(4vh + 4vw);
 

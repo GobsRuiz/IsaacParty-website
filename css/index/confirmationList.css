@@ -1,0 +1,49 @@
+#confirmationList{
+    padding: var(--padding-section);
+}
+
+
+
+
+
+/* H1 */
+/* #confirmationList h1{
+} */
+
+
+
+
+
+/* List */
+#confirmationList_list{
+    width: 60%;
+    height: calc(16vh + 12vw);
+
+    color: #fff;
+    background-color: var(--gray-40);
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: calc(1vh + 1vw);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#confirmationList_list::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: calc(1vh + 1vw);
+	background-color: #F5F5F5;
+}
+
+#confirmationList_list::-webkit-scrollbar
+{
+	width: calc(.8vh + .8vw);
+	background-color: #F5F5F5;
+}
+
+#confirmationList_list::-webkit-scrollbar-thumb
+{
+	border-radius: calc(1vh + 1vw);
+	background-color: var(--gray-40);
+}

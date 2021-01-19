@@ -7,11 +7,20 @@
     --orange: #FF512F;
 
     /* Gray */
-    --gray-40: rgba(40, 40, 40);
+    --gray-40: rgb(40, 40, 40);
+
+    /* RGBA */
+    --rgba-05: rgba(40, 40, 40, .5);
 
 
 
     /* HTML */
-    /* Title - font */
+    /* Title */
+    /* Font */
     --title_fontSize: calc(2vh + 2vw);
+    /* Margin bottom */
+    --title_marginBottom: calc(2vh + 2vw);
+
+    /* Padding */
+    --padding-section: calc(4vh + 2vw) calc(2vh + 2vw);
 }

@@ -15,10 +15,10 @@
     
     color: #fff;
 
-    margin-bottom: calc(5vh + 2vw);
+    margin-bottom: var(--title_marginBottom);
 }
 #aboutParty_title h1{
-    font-size: calc(2vh + 2vw);
+    font-size: var(--title_fontSize);
 }
 #aboutParty_title p{
     font-size: calc(1vh + 1vw);

@@ -12,3 +12,31 @@
     top: 0;
     left: 0;
 }
+
+
+
+
+
+/* Section title */
+.sectionTitle{
+    display: inline-block;
+
+    font-size: var(--title_fontSize);
+
+    margin-bottom: var(--title_marginBottom);
+    position: relative;
+}.sectionTitle::after{
+    content: "";
+
+    width: 30%;
+    height: 1vh;
+
+    display: block;
+
+    background: linear-gradient(to right, #ff512f, #f09819);
+    background: -webkit-linear-gradient(to right, #ff512f, #f09819);
+
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+}
