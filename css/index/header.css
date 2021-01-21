@@ -262,7 +262,7 @@
 
         background-color: #fff;
 
-        padding: 0 max(4vh, 2vw);
+        padding: 0 max(4vh, 1.8vw);
         padding-top: max(5.2vh, 2.2vw);
         position: fixed;
         top: 0;
@@ -292,7 +292,7 @@
     /* Span */
     #header_top_hamburguer span{
         width: max(6vh, 3vw);
-        height: max(.5vh, .2vw);
+        height: max(.4vh, .2vw);
 
         display: block;
         
