@@ -18,13 +18,17 @@
 /* Address */
 #partyLocation_address{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    padding: 0 calc(3vh + 1vw);
 }
 
 #partyLocation_address_text p{
     color: #fff;
     font-weight: normal;
-    font-size: calc(1vh + .5vw);
+    font-size: calc(2.2vh + .5vw);
 
     margin-bottom: calc(1vh + .5vw);
 }#partyLocation_address_text p:last-child{

@@ -35,7 +35,7 @@
     content: "";
 
     width: 30%;
-    height: 1vh;
+    height: calc(.8vh + .1vw);
 
     display: block;
 
@@ -43,6 +43,6 @@
     background: -webkit-linear-gradient(to right, #ff512f, #f09819);
 
     position: absolute;
-    bottom: -5%;
+    bottom: calc(-.2vh - .1vw);
     left: 0;
 }
