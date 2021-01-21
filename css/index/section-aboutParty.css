@@ -19,7 +19,7 @@
     font-size: var(--title_fontSize);
 }
 #aboutParty_title p{
-    font-size: calc(1.2vh + 1vw);
+    font-size: calc(1.5vh + 1.1vw);
     max-width: 65%;
 }
 
