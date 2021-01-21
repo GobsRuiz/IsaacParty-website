@@ -47,7 +47,7 @@
 
     box-sizing: border-box;
 
-    padding: 2vh 15vh;
+    padding: 2vh max(4vh, 4vw);
     position: fixed;
     z-index: 999;
     transition: background-color .25s
@@ -73,7 +73,7 @@
     text-transform: capitalize;
     font-weight: 500;
 
-    padding: 1vh 2vh;
+    padding: 0 max(1vh, 1vw);
     transition: color .25s;
 }.headerAnimationScroll#header_top_menu a{
     color: var(--gray-40);
@@ -98,7 +98,8 @@
     display: flex;
     justify-content: space-between;
 
-    padding: calc(5.5vh + 3vw) calc(5vh + 2vw);
+    padding: 0 max(3vh, 3vw);
+    padding-top: 15vh;
     position: relative;
     z-index: 9;
 }
@@ -108,24 +109,26 @@
 /* Text */
 #header_content_text{
     max-width: 30vw;
+
+    border: 1px solid red;
 }
 #header_content_text h1{
     font-family: snubnose;
     color: #fff;
-    font-size: calc(4vh + 4vw);
+    font-size: max(13vh, 6vw);
 }
 #header_content_text h2{
     font-family: snubnose;
     color: var(--orange);
-    font-size: calc(4vh + 4vw);
+    font-size: max(13vh, 6vw);;
 
     text-align: right;
 
-    margin-bottom: calc(2vh + 1vw);
+    margin-bottom: 4vh;
 }
 #header_content_text p{
     color: #fff;
-    font-size: calc(1.2vh + 1.2vw);
+    font-size: max(3.5vh, 1.6vw);
 }
 
 
@@ -134,11 +137,12 @@
 #header_content_confirm{
     width: 26vw;
 
+    border: 1px solid green;
     background-color: #fff;
 
     position: relative;
     box-sizing: border-box;
-    padding: calc(4vh + 1vw) calc(2vh + 3vw);
+    padding: 5vh calc(2vh + 2vw);
 }
 /* Responsive confirmation */
 #header_top_menu_closeResponsiveMenu,
@@ -150,9 +154,10 @@
 
 /* H1 */
 #header_content_confirm_title{
+    font-size: max(3vh, 1.5vw);
     text-align: center;
 
-    margin-bottom: calc(3vh + 2vw);
+    margin-bottom: 5vh;
 }
 
 /* Form */
@@ -167,7 +172,7 @@
     display: block;
 
     background-color: #ecf0f1;
-    border-radius: calc(.3vh + .3vw);
+    border-radius: max(1.5vh, 1.5vw);
 
     box-sizing: border-box;
     margin-bottom: 2vh;
@@ -183,7 +188,7 @@
     background: linear-gradient(to right, #ff512f, #f09819); 
     
     margin-top: 1vh;
-    padding: 2vh 6vh;
+    padding: max(2vh, 1vw) max(4.5vh, 2.5vw);
 }
 
 
@@ -191,14 +196,14 @@
 /* Countdown */
 #header_content_countdown{
     background-color: rgb(40, 40, 40);
-    border-radius: 2vh;
+    border-radius: max(2vh, 1vw);
 
     position: absolute;
     left: 50%;
     transform: translateX(-50%) translateY(69vh);
     overflow: hidden;
 
-    padding: 4vh 2vh;
+    padding: max(2.5vh, 1.5vw) max(2vh, 1vw);
 }
 
 /* Border top */
@@ -210,7 +215,7 @@
     color: #fff;
     text-transform: uppercase;
 
-    padding: 1vh 0;
+    padding: max(1vh, .6vw) 0;
 }
 
 /* Timer */
@@ -219,18 +224,18 @@
     align-items: center;
     justify-content: space-around;
 
-    margin-top: calc(2vh + 1vw);
+    margin-top: max(5.5vh, 2.5vw);
 }
 
 #header_content_countdown_timer > div{
     display: flex;
     text-align: center;
 
-    margin: 0 1.5vw;
+    margin: 0 max(2.5vh, 1.5vw);
 }
 #header_content_countdown_timer p{
     color: #fff;
-    font-size: calc(1.5vh + 1.2vw);
+    font-size: max(4vh, 1.8vw);
 }
 
 
@@ -249,8 +254,8 @@
 
         background-color: #fff;
 
-        padding: 0 calc(2vh + 1vw);
-        padding-top: calc(1vh + 2vw);
+        padding: 0 max(4vh, 2vw);
+        padding-top: max(4vh, 2vw);
         position: fixed;
         top: 0;
         right: -30%;
@@ -263,7 +268,7 @@
 
         color: var(--gray-40);
 
-        margin-bottom: calc(1vh + 1vw);
+        margin-bottom: max(3vh, 1.5vw);
     }
 
     
@@ -275,15 +280,15 @@
     }
     /* Span */
     #header_top_hamburguer span{
-        width: calc(2vh + 2vw);
-        height: calc(.2vh + .2vw);
+        width: max(6vh, 3vw);
+        height: max(.5vh, .2vw);
 
         display: block;
         
         background-color: #fff;
         opacity: 1;
 
-        margin-bottom: calc(.3vh + .3vw);
+        margin-bottom: max(1.2vh, .6vw);
         transition: transform .3s, opacity .2s;
     }#header_top_hamburguer span:last-child{
         margin-bottom: none;
@@ -311,12 +316,12 @@
 @media screen and (max-width: 850px){
     /* Text */
     #header_content_text{
-        max-width: calc(32vw + 2vh);
+        max-width: max(65vh, 37vw);
     }
 
     /* Confirmation form */
     #header_content_confirm{
-        width: calc(30vw + 5vh);
+        width: max(55vh, 32vw);
     }
 }
 
