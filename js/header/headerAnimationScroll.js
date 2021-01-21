@@ -8,7 +8,7 @@ var headerHamburguer = document.getElementById("header_top_hamburguer");
 // Functions
 window.addEventListener("scroll", (e) => {
     let value = 0;
-    
+
     if(window.innerWidth > 1024){
         value = 25;
     }else{
@@ -35,3 +35,4 @@ window.addEventListener("scroll", (e) => {
         }
     }
 })
+
