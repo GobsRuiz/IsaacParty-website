@@ -7,7 +7,15 @@ var headerHamburguer = document.getElementById("header_top_hamburguer");
 
 // Functions
 window.addEventListener("scroll", (e) => {
-    if(window.pageYOffset >= 25){
+    let value = 0;
+    
+    if(window.innerWidth > 1024){
+        value = 25;
+    }else{
+        value = 10;
+    }
+
+    if(window.pageYOffset >= value){
         headerTop.classList.add("headerAnimationScroll");
         headerLogo.classList.add("headerAnimationScroll");
         
