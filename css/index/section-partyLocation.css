@@ -24,7 +24,7 @@
 
     padding: 0 calc(3vh + 1vw);
 }
-
+/* P */
 #partyLocation_address_text p{
     color: #fff;
     font-weight: normal;
@@ -34,6 +34,7 @@
 }#partyLocation_address_text p:last-child{
     margin-bottom: 0;
 }
+/* Span */
 #partyLocation_address_text p span{
     display: block;
 
@@ -45,4 +46,37 @@
 #partyLocation_address iframe{
     width: 50%;
     height: auto;
+}
+
+
+
+
+
+/* Responsive */
+/* 500 */
+@media screen and (max-width:500px ){
+    /* Address */
+    #partyLocation_address{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Text */
+    #partyLocation_address_text{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around;  
+    }
+    /* P */
+    #partyLocation_address_text p {
+        margin-bottom: calc(2vh + .5vw);
+    }
+
+    /* Iframe */
+    #partyLocation_address iframe{
+        width: 100%;
+        height: auto;
+
+        margin-top: calc(2vh + .5vw);
+    }
 }
