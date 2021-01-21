@@ -85,7 +85,8 @@
 
 /* Image */
 .aboutParty_item_image{
-    max-width: calc(25vh + 10vw);
+    width: calc(25vh + 10vw);
+    height: calc(15vh + 10vw)
 }
 
 
