@@ -110,7 +110,7 @@
 
 /* Text */
 #header_content_text{
-    max-width: 30vw;
+    max-width: calc(30vh + 15vw);
 
     border: 1px solid red;
 }
@@ -324,29 +324,11 @@
     }
 }
 
-/* 850 */
-@media screen and (max-width: 850px){
-    /* Text */
-    #header_content_text{
-        max-width: max(65vh, 37vw);
-    }
-
-    /* Confirmation form */
-    #header_content_confirm{
-        width: max(55vh, 32vw);
-    }
-}
-
 /* 650 */
 @media screen and (max-width: 650px){
-    /* Text */
-    #header_content_text{
-        max-width: calc(33vw + 3vh);
-    }
-
     /* Confirmation form */
     #header_content_confirm{
-        width: calc(34vw + 6vh);
+        width: calc(28vh + 12vw);
     }
 }
 
@@ -358,15 +340,11 @@
         align-items: center;
     }
 
-    /* Text */
-    #header_content_text{
-        max-width: calc(38vw + 6vh);
-    }
-
     /* Confirmation form */
     #header_content_confirm{
         display: none;
     }
+
 
     /* Responsive confirmation */
     /* Button */
@@ -407,20 +385,43 @@
         padding: calc(2vh + 2vw) calc(3vh + 3vw);
         position: relative;
     }
+
     /* Close button */
     #header_content_modalConfirm_btnClose{
-        color: #fff;
-        font-size: calc(3vh + 3vw);
+        color: var(--gray-40);
+        font-size: calc(3.5vh + 1.2vw);
         cursor: pointer;
 
         position: absolute;
-        transform: translateX(920%) translateY(-160%);
+        top: 1%;
+        right: 1%;
+    }#header_content_modalConfirm_btnClose:hover{
+        color: red;
     }
+
     /* H1 */
     #header_content_modalConfirm_container h1{
         color: var(--gray-40);
         font-size: calc(2vh + 2vw);
 
         margin-bottom: calc(3vh + 3vw);
+    }
+
+    /* Form */
+    /* Input */
+    #header_content_confirm_form input{
+        font-size: calc(1.7vh + .5vw);
+    }
+    #header_content_confirm_form input::placeholder{
+        font-size: calc(1.7vh + .5vw);
+        font-weight: 700;
+    }
+
+    /* Button */
+    #header_content_confirm_form button{
+        font-size: calc(1.7vh + .5vw);
+        font-weight: 700;
+
+        /* padding: calc(); */
     }
 }
