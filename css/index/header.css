@@ -278,7 +278,7 @@
         display: block;
 
         color: var(--gray-40);
-        font-size: calc(2vh + .7vw);
+        font-size: calc(2vh + 1vw);
 
         margin-bottom: max(3vh, 1.5vw);
     }
