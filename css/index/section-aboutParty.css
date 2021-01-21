@@ -85,7 +85,7 @@
 
 /* Image */
 .aboutParty_item_image{
-    width: calc(26vh + 12vw);
+    width: calc(130vh + 50vw);
     height: calc(15vh + 10vw)
 }
 .aboutParty_item_image img{

@@ -24,7 +24,7 @@
 #partyLocation_address_text p{
     color: #fff;
     font-weight: normal;
-    font-size: calc(1vh + 1.2vw);
+    font-size: calc(1vh + .5vw);
 
     margin-bottom: calc(1vh + .5vw);
 }#partyLocation_address_text p:last-child{
