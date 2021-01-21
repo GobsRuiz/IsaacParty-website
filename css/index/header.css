@@ -203,7 +203,7 @@
 /* Countdown */
 #header_content_countdown{
     background-color: rgb(40, 40, 40);
-    border-radius: max(2vh, 1vw);
+    border-radius: calc(1.5vh + .6vw);
 
     position: absolute;
     left: 50%;
@@ -263,7 +263,7 @@
         background-color: #fff;
 
         padding: 0 max(4vh, 2vw);
-        padding-top: max(4vh, 2vw);
+        padding-top: max(5.2vh, 2.2vw);
         position: fixed;
         top: 0;
         right: -100%;
@@ -275,6 +275,7 @@
         display: block;
 
         color: var(--gray-40);
+        font-size: calc(2vh + .7vw);
 
         margin-bottom: max(3vh, 1.5vw);
     }
@@ -312,6 +313,7 @@
         display: block;
 
         cursor: pointer;
+        font-size: calc(4vh + 1.5vw);
 
         position: absolute;
         top: .5%;
