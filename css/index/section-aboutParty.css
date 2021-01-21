@@ -2,7 +2,7 @@
     background: linear-gradient(to right, #ff512f, #f09819);
     background: -webkit-linear-gradient(to right, #ff512f, #f09819);
 
-    padding: 12vh calc(1vh + 1vw);
+    padding: calc(6vh + 1.5vw) calc(1vh + 1vw);
 }
 
 
@@ -19,7 +19,7 @@
     font-size: var(--title_fontSize);
 }
 #aboutParty_title p{
-    font-size: calc(1vh + 1vw);
+    font-size: calc(1.2vh + 1vw);
     max-width: 65%;
 }
 

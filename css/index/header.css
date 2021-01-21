@@ -60,7 +60,7 @@
 #header_top_logo h1{
     font-family: snubnose;
     color: #fff;
-    font-size: max(3vh, 1.5vw);
+    font-size: calc(1.9vh + .9vw);
 
     transition: color .25s;
 }.headerAnimationScroll#header_top_logo h1{
@@ -73,7 +73,7 @@
     color: #fff;
     text-transform: initial;
     font-weight: 500;
-    font-size: max(3vh, 1.2vw);
+    font-size: calc(1.2vh + .6vw);
 
     padding: 0 max(1vh, 1vw);
     transition: color .25s;
@@ -100,7 +100,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 0 max(3vh, 3vw);
+    padding: 0 calc(2vh + 1vw);
     padding-top: 15vh;
     position: relative;
     z-index: 9;
@@ -117,20 +117,20 @@
 #header_content_text h1{
     font-family: snubnose;
     color: #fff;
-    font-size: max(13vh, 6vw);
+    font-size: calc(6.5vh + 2.5vw);
 }
 #header_content_text h2{
     font-family: snubnose;
     color: var(--orange);
-    font-size: max(13vh, 6vw);;
+    font-size: calc(6.5vh + 2.5vw);
 
     text-align: right;
 
-    margin-bottom: 4vh;
+    margin-bottom: calc(3vh + .5vw);
 }
 #header_content_text p{
     color: #fff;
-    font-size: max(3.5vh, 1.6vw);
+    font-size: calc(1.8vh + .7vw);
 }
 
 
@@ -156,7 +156,7 @@
 
 /* H1 */
 #header_content_confirm_title{
-    font-size: max(3vh, 1.5vw);
+    font-size: calc(1.7vh + .6vw);
     text-align: center;
 
     margin-bottom: 5vh;
@@ -173,7 +173,7 @@
     width: 100%;
     display: block;
 
-    font-size: max(2.2vh, 1vw);
+    font-size: calc(1.2vh + .5vw);
     background-color: #ecf0f1;
     border-radius: max(1.5vh, 1.5vw);
 
@@ -181,21 +181,21 @@
     margin-bottom: max(2vh, 1vw);
     padding: max(2vh, 1vw);
 }.confirmForm input::placeholder{
-    font-size: max(2.2vh, 1vw);
+    font-size: calc(1.1vh + .5vw);
     font-weight: 700;
 }
 /* Button */
 .confirmForm button{
     color: #fff;
     font-weight: 700;
-    font-size: max(2.2vh, 1vw);
+    font-size: calc(1.2vh + .5vw);
     text-transform: uppercase;
     border-radius: calc(1vh + 1vw);
     background: -webkit-linear-gradient(to right, #ff512f, #f09819);
     background: linear-gradient(to right, #ff512f, #f09819); 
     
     margin-top: 1vh;
-    padding: max(2vh, 1vw) max(4.5vh, 2.5vw);
+    padding: calc(1vh + .4vw) calc(2vh + 1vw);
 }
 
 
@@ -220,9 +220,9 @@
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: max(2.8vh, 1.3vw);
+    font-size: calc(1.2vh + .7vw);
 
-    padding: max(1vh, .6vw) 0;
+    padding: calc(.7vh + .3vw) 0;
     position: relative;
 }
 
@@ -232,18 +232,18 @@
     align-items: center;
     justify-content: space-around;
 
-    padding: max(2.5vh, 1.2vw) max(2.5vh, 1.2vw);
+    padding: calc(1vh + .5vw) calc(1vh + .5vw);
 }
 
 #header_content_countdown_timer > div{
     display: flex;
     text-align: center;
 
-    margin: 0 max(2.5vh, 1.5vw);
+    margin: 0 calc(1vh + .5vw);
 }
 #header_content_countdown_timer p{
     color: #fff;
-    font-size: max(4vh, 1.8vw);
+    font-size: calc(1.7vh + .9vw);
 }
 
 

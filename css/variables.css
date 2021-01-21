@@ -19,7 +19,7 @@
     /* Font */
     --title_fontSize: calc(3vh + 1.5vw);
     /* Margin bottom */
-    --title_marginBottom: calc(2vh + 2vw);
+    --title_marginBottom: calc(3vh + 1.5vw);
 
     /* Padding */
     --padding-section: calc(4vh + 2vw) calc(2vh + 2vw);
