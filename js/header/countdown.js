@@ -4,7 +4,7 @@ const countDownText_minutes = document.getElementById("header_content_countdown_
 const countDownText_seconds = document.getElementById("header_content_countdown_seconds");
 
 // Date
-const dateTime = new Date("January 21 2021 24:00:00");
+const dateTime = new Date("February 12 2021 24:00:00");
 
 
 
