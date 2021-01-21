@@ -278,7 +278,7 @@
         display: block;
 
         color: var(--gray-40);
-        font-size: calc(2vh + 1vw);
+        font-size: calc(2vh + .7vw);
 
         margin-bottom: max(3vh, 1.5vw);
     }
@@ -350,6 +350,13 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    /* Text */
+    #header_content_text{
+        max-width: calc(30vh + 15vw);
+    
+        border: 1px solid red;
     }
 
     /* Confirmation form */
