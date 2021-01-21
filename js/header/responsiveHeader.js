@@ -16,7 +16,11 @@ if(window.innerWidth <= 1024){
     // Open and close menu
     function actionHeaderMenu() {
         if(headerMenu.style.display != "none"){
-            headerMenu.style.right = "-30%";
+            if(window.innerWidth > 450){
+                headerMenu.style.right = "-50%";
+            }else{
+                headerMenu.style.right = "-80%";
+            }
 
             setTimeout(() => {
                 headerMenu.style.display = "none";

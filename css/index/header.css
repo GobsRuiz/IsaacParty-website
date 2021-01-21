@@ -60,6 +60,7 @@
 #header_top_logo h1{
     font-family: snubnose;
     color: #fff;
+    font-size: max(3vh, 1.5vw);
 
     transition: color .25s;
 }.headerAnimationScroll#header_top_logo h1{
@@ -70,8 +71,9 @@
 /* Menu */
 #header_top_menu a{
     color: #fff;
-    text-transform: capitalize;
+    text-transform: initial;
     font-weight: 500;
+    font-size: max(3vh, 1.2vw);
 
     padding: 0 max(1vh, 1vw);
     transition: color .25s;
@@ -135,7 +137,7 @@
 
 /* Confirmation form */
 #header_content_confirm{
-    width: 26vw;
+    width: auto;
 
     border: 1px solid green;
     background-color: #fff;
@@ -171,17 +173,22 @@
     width: 100%;
     display: block;
 
+    font-size: max(2.2vh, 1vw);
     background-color: #ecf0f1;
     border-radius: max(1.5vh, 1.5vw);
 
     box-sizing: border-box;
-    margin-bottom: 2vh;
-    padding: 2vh;
+    margin-bottom: max(2vh, 1vw);
+    padding: max(2vh, 1vw);
+}.confirmForm input::placeholder{
+    font-size: max(2.2vh, 1vw);
+    font-weight: 700;
 }
 /* Button */
 .confirmForm button{
     color: #fff;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: max(2.2vh, 1vw);
     text-transform: uppercase;
     border-radius: calc(1vh + 1vw);
     background: -webkit-linear-gradient(to right, #ff512f, #f09819);
@@ -202,8 +209,6 @@
     left: 50%;
     transform: translateX(-50%) translateY(69vh);
     overflow: hidden;
-
-    padding: max(2.5vh, 1.5vw) max(2vh, 1vw);
 }
 
 /* Border top */
@@ -214,8 +219,11 @@
 
     color: #fff;
     text-transform: uppercase;
+    font-weight: 500;
+    font-size: max(2.8vh, 1.3vw);
 
     padding: max(1vh, .6vw) 0;
+    position: relative;
 }
 
 /* Timer */
@@ -224,7 +232,7 @@
     align-items: center;
     justify-content: space-around;
 
-    margin-top: max(5.5vh, 2.5vw);
+    padding: max(2.5vh, 1.2vw) max(2.5vh, 1.2vw);
 }
 
 #header_content_countdown_timer > div{
@@ -258,9 +266,9 @@
         padding-top: max(4vh, 2vw);
         position: fixed;
         top: 0;
-        right: -30%;
+        right: -100%;
         z-index: 999999;
-        transition: right .3s;
+        transition: right .4s;
     }
     /* A */
     #header_top_menu a{
@@ -275,6 +283,8 @@
     /* Hamburguer icon */
     #header_top_hamburguer{
         display: block;
+
+        cursor: pointer;
 
         transition: transform .3s;
     }
