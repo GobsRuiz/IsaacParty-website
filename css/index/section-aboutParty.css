@@ -50,9 +50,9 @@
     justify-content: space-between;
 
     background-color: var(--gray-40);
-    border-radius: calc(1vh + 1vw);
+    border-radius: calc(1.5vh + 1vw);
 
-    padding: 5vh 2vw;
+    padding: calc(3vh + 1vw) calc(1vh + 1vw);
 }
 
 /* Text */
@@ -64,7 +64,7 @@
 /* H3 */
 .aboutParty_item_text h3{
     color: #fff;
-    font-size: calc(2.5vh + 2.5vw);
+    font-size: calc(3vh + 1.2vw);
 
     margin-bottom: 4vh;
 }
@@ -80,11 +80,22 @@
 /* P */
 .aboutParty_item_text p{
     color: #fff;
-    font-size: calc(1vh + 1vw);
+    font-size: calc(1.6vh + .8vw);
 }
 
 /* Image */
 .aboutParty_item_image{
-    max-width: 30vw;
-    max-height: calc(20vh + 10vw);
+    max-width: calc(25vh + 10vw);
+}
+
+
+
+
+
+/* Responsive */
+/* 900 */
+@media screen and (max-width: 900px){
+    #aboutParty_title p{
+        max-width: 100%;
+    }
 }
